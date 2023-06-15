@@ -24,9 +24,9 @@ a:link{
 }
 
 a:visited{
-    color: pink;
+    color: darkorange;
 }
 
 a:hover{
-    color: orange;
+    color: pink;
 }
