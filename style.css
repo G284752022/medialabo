@@ -15,14 +15,18 @@ h2{
     text-decoration: underline;
 }
 
+h3{
+    color: pink;
+}
+
 a:link{
     color: mediumspringgreen;
 }
 
 a:visited{
-    color: orange;
+    color: pink;
 }
 
 a:hover{
-    color: pink;
+    color: orange;
 }
