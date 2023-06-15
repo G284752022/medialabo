@@ -1,5 +1,13 @@
+*{
+    font-family: "Hannotate SC";
+}
+
 body{
     background-color: white;
+}
+
+h1{
+    text-shadow: palegreen 5px 0 10px;
 }
 
 h2{
