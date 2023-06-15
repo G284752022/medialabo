@@ -1,3 +1,10 @@
 body{
-    background-color: whitesmoke;
+    background-color: white;
+}
+h2{
+    color: mediumseagreen;
+    text-decoration: underline;
+}
+a:link{
+    color: mediumspringgreen;
 }
