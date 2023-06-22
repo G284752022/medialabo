@@ -12,6 +12,8 @@ hantei();
 hantei();
 hantei();
 hantei();
+hantei();
+hantei();
 
 // ボタンを押した後の処理をする関数 hantei(); の定義
 function hantei(){
@@ -21,4 +23,18 @@ function hantei(){
     // 課題3-1: 正解判定にする
     // kotae と yoso が一致するかどうか調べて結果を出力する
     // 課題3-1における出力先はコンソール
+
+    console.log(kaisu + 1 + "回目の予想: ");
+    if(yoso === kotae){
+        console.log("正解です。おめでとう！");
+    }else if(kaisu > 3){
+        console.log("答えは" + kotae + "でした。すでにゲームは終わっています。");
+    }else if(yoso !== kotae){
+        if(yoso > kotae){
+            console.log("まちがい。答えはもっと小さいです。");
+        }else{
+            console.log("まちがい。答えはもっと大きいです。");
+        }
+    }
+    kaisu++;
 }
