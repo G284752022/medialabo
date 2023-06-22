@@ -31,6 +31,19 @@ div#main > div {
     border-color: gray;
 }
 
+/* .box {
+    display: flex;
+    width: 2000px;
+    height: 240px;
+    overflow-x: scroll;
+}
+  
+.box div {
+    width: 90%;
+    margin: 5px;
+    flex-shrink: 0;
+} */
+
 h3{
     color: pink;
     text-decoration: lightgreen underline;
