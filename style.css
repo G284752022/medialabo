@@ -13,41 +13,37 @@ h1{
 h2{
     color: mediumseagreen;
     text-decoration: pink underline dotted 5px;
-    /* background-color: rgb(251, 216, 222); */
 }
 
-div#main{
+div#box{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
     width: 1000px;
 }
 
-div#main > div {
-	margin: 5px;
-	padding: 5px 5px 5px 5px;
+div#box > div {
+	margin: 10px;
+	padding: 10px 10px 10px 10px;
 	background-color: white;
     border: solid 3px;
-    border-color: gray;
+    border-color: rgb(156, 156, 156);
 }
 
-/* .box {
-    display: flex;
-    width: 2000px;
-    height: 240px;
-    overflow-x: scroll;
-}
+/*フェードイン 
+div#box {
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
   
-.box div {
-    width: 90%;
-    margin: 5px;
-    flex-shrink: 0;
-} */
+  div#box:hover {
+    opacity: 1;
+  }
+   */
 
 h3{
     color: pink;
     text-decoration: lightgreen underline;
-    /* background-color: rgb(223, 255, 242); */
 }
 
 a:link{
