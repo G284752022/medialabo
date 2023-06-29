@@ -30,7 +30,7 @@ div#box > div {
     border-color: rgb(156, 156, 156);
 }
 
-/*フェードイン 
+/* フェードイン 
 div#box {
     opacity: 0;
     transition: opacity 0.5s;
@@ -38,8 +38,8 @@ div#box {
   
   div#box:hover {
     opacity: 1;
-  }
-   */
+  } */
+  
 
 h3{
     color: pink;
