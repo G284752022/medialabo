@@ -9,11 +9,6 @@ let kaisu = 0;
 // 将来以下の hantei(); の4回の呼び出しを削除する
 // 代わりにここではボタンを押したら hantei(); を呼び出すイベント処理をする
 hantei();
-hantei();
-hantei();
-hantei();
-hantei();
-hantei();
 
 // ボタンを押した後の処理をする関数 hantei(); の定義
 function hantei(){
@@ -25,16 +20,37 @@ function hantei(){
     // 課題3-1における出力先はコンソール
 
     console.log(kaisu + 1 + "回目の予想: ");
+
+    kaisu = kaisu + 1;
     if(yoso === kotae){
-        console.log("正解です。おめでとう！");
-    }else if(kaisu > 3){
-        console.log("答えは" + kotae + "でした。すでにゲームは終わっています。");
+        let spankaisu = document.querySelector('span#kaisu');
+        spankaisu.textContent = kaisu;
+        let spananswer = document.querySelector('span#answer');
+        spananswer.textContent = yoso;
+        let result = document.querySelector('p#result');
+        result.textContent = "正解です。おめでとう！";
+    }else if(kaisu > 4){
+        let spankaisu = document.querySelector('span#kaisu');
+        spankaisu.textContent = kaisu;
+        let spananswer = document.querySelector('span#answer');
+        spananswer.textContent = yoso;
+        let result = document.querySelector('p#result');
+        result.textContent = "答えは" + kotae + "でした。すでにゲームは終わっています。";
     }else if(yoso !== kotae){
         if(yoso > kotae){
-            console.log("まちがい。答えはもっと小さいです。");
+            let spankaisu = document.querySelector('span#kaisu');
+            spankaisu.textContent = kaisu;
+            let spananswer = document.querySelector('span#answer');
+            spananswer.textContent = yoso;
+            let result = document.querySelector('p#result');
+            result.textContent = "まちがい。答えはもっと小さいです。";
         }else{
-            console.log("まちがい。答えはもっと大きいです。");
+            let spankaisu = document.querySelector('span#kaisu');
+            spankaisu.textContent = kaisu;
+            let spananswer = document.querySelector('span#answer');
+            spananswer.textContent = yoso;
+            let result = document.querySelector('p#result');
+            result.textContent = "まちがい。答えはもっと大きいです。";
         }
     }
-    kaisu++;
 }
