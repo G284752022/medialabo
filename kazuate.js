@@ -31,15 +31,13 @@ function hantei(){
     spananswer.textContent = yoso;
     let result = document.querySelector('p#result');
     
-    if(yoso === kotae){
+    if(yoso == kotae){
         result.textContent = "正解です。おめでとう！";
+    }else if(yoso >kotae){
+        result.textContent = "まちがい。答えはもっと小さいです。";
+    }else if(yoso < kotae){
+        result.textContent = "まちがい。答えはもっと大きいです。";
     }else if(kaisu >= 4){
         result.textContent = "答えは" + kotae + "でした。すでにゲームは終わっています。";
-    }else if(yoso !== kotae){
-        if(yoso > kotae){
-            result.textContent = "まちがい。答えはもっと小さいです。";
-        }else{
-            result.textContent = "まちがい。答えはもっと大きいです。";
-        }
     }
 }
