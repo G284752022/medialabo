@@ -59,6 +59,8 @@ console.log("都市名: " + data.name);
 
 //////////課題4-2
 
+ul.remove();
+
 let div = document.querySelector('div#result');
 let div0 = document.createElement('li');
 div0.textContent = '緯度: ' + data.coord.lat;
