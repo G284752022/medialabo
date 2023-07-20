@@ -106,16 +106,16 @@ console.log("都市名: " + data.name);
 // div8.style.textAlign = "center";
 
 let btn = document.querySelector('button#search');
-btn.addEventListener('click', hantei);
+btn.addEventListener('click', search);
 
-function hantei() {
+function search() {
   let s= document.querySelector('select#toshi');
   let idx = s.selectedIndex;  // idx 番目の option が選択された
 
   let os = s.querySelectorAll('option');  // s の子要素 option をすべて検索
   let o = os.item(idx);       // os の idx 番目の要素
 
-    let kensaku=o.value;
+    let kensaku = o.value;
     let url = "https://www.nishita-lab.org/web-contents/jsons/openweather/"+kensaku+".json";
     console.log(url);
 
