@@ -1,6 +1,7 @@
 body{
     background-color: lightblue;
     background-image: url("雲イラスト.jpeg");
+    text-align: center;
 }
 
 h1{
@@ -18,9 +19,4 @@ ul{
 
 li{
     list-style: none;
-}
-
-form{
-    padding-top: 50px;
-    text-align: center;
 }
