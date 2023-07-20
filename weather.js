@@ -59,41 +59,48 @@ console.log("都市名: " + data.name);
 
 //////////課題4-2
 
-ul.remove();
-
 let div = document.querySelector('div#result');
 let div0 = document.createElement('li');
 div0.textContent = '緯度: ' + data.coord.lat;
 div.insertAdjacentElement('beforeend', div0);
+div0.style.textAlign = "center";
 
 let div1 = document.createElement('div');
 div1.textContent = "経度: " + data.coord.lon;
 div.insertAdjacentElement('beforeend', div1);
+div1.style.textAlign = "center";
 
 let div2 = document.createElement('div');
 div2.textContent = "天気: " + data.weather[0].description;
 div.insertAdjacentElement('beforeend', div2);
+div2.style.textAlign = "center";
 
 let div3 = document.createElement('div');
 div3.textContent = "最低気温: " + data.main.temp_min + " °C";
 div.insertAdjacentElement('beforeend', div3);
+div3.style.textAlign = "center";
 
 let div4 = document.createElement('div');
 div4.textContent = "最高気温: " + data.main.temp_max + " °C"
 div.insertAdjacentElement('beforeend', div4);
+div4.style.textAlign = "center";
 
 let div5 = document.createElement('div');
 div5.textContent = "湿度: " + data.main.humidity + " %"
 div.insertAdjacentElement('beforeend', div5);
+div5.style.textAlign = "center";
 
 let div6 = document.createElement('div');
 div6.textContent = "風速: " + data.wind.speed + " m/s"
 div.insertAdjacentElement('beforeend', div6);
+div6.style.textAlign = "center";
 
 let div7 = document.createElement('div');
 div7.textContent = "風向: " + data.wind.deg;
 div.insertAdjacentElement('beforeend', div7);
+div7.style.textAlign = "center";
 
 let div8 = document.createElement('div');
 div8.textContent = "都市名: " + data.name;
 div.insertAdjacentElement('beforeend', div8);
+div8.style.textAlign = "center";
